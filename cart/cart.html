@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cart</title>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style type="text/css">
+	header{
+		background-color: #326af1;
+		padding: 20px 20px 20px 20px;
+
+	}
+	.product{
+		width: 100%;
+		height: 60px;
+		padding-top:5px;
+		margin-top: 10px;
+		background-color: #e7efe3;
+		padding-top:10px;
+
+	}
+	.shoppingcart{
+		margin-left: 10px;
+	}
+	
+
+	#productName{
+		width: 250px;
+		height: 50px;
+		float: left;
+	}
+
+	#productPrice{
+		width: 250px;
+		height: 50px;
+		float: left;
+	}
+
+	#productQuantity{
+
+		width: 250px;
+		height: 50px;
+		float: left;
+	}
+
+	#productRemoval{
+		width: 250px;
+		height: 50px;
+		float: left;
+	}
+
+	#productTotal{
+		width: 250px;
+		height: 50px;
+		float: left;
+	}
+
+	label{
+		width: 250px;
+		height: 50px;
+		margin-top:15px;
+		color: #8a8e7d;
+		/*float: left;*/
+	}
+
+	.checkout{
+		margin-top: 100px;
+		height: 100px;
+		width: 200px;
+		margin-left: 30px;
+		float: right;
+	}
+
+</style>
+   
+   
+</head>
+<body>
+	 
+	 <header class=" text-center "><h1>Your Cart</h1></header>
+		 <div class="shoppingcart">
+	<div class="column-labels">
+	    
+	    <label class="product-details">Product</label>
+	    <label class="product-price">Price($)</label>
+	    <label class="product-quantity">Quantity</label>
+	    <label class="product-removal">Remove</label>
+	    <label class="product-line-price">Total($)</label>
+	  </div>
+
+	<div class="cartItems">
+	 <div class="product px-3">
+	 	<div id="productName">
+	 		<h3>Chicken Roll</h3>
+	 	</div>
+	 	<div id="productPrice" class="productPrice">
+	 		4
+	 	</div>
+	 	<div id="productQuantity" >
+	 		<input type="number"  class="productQuantity" value="1" min="1" name="">
+	 	</div>
+	 	<div id="productRemoval">
+	 		<button id="removeProduct" class="btn btn-danger">Remove</button>
+	 	</div>
+	 	
+	 	<div class="productTotal">4</div>
+
+	 </div>
+
+	 <div class="product px-3">
+	 	<div id="productName">
+	 		<h3> Roll</h3>
+	 	</div>
+	 	<div id="productPrice" class="productPrice">
+	 		5
+	 	</div>
+	 	<div id="productQuantity" >
+	 		<input type="number" class="productQuantity" value="1" min="1" name="">
+	 	</div>
+	 	<div id="productRemoval">
+	 		<button id="removeProduct" class="btn btn-danger">Remove</button>
+	 	</div>
+	 	<div class="productTotal">5</div>
+
+	 </div>
+	</div>
+
+
+	<div class="checkout">
+		<h3 >Total</h3>
+		<h4><div id="totalOrder" class="total">$9</div></h4>
+		<br>
+		<h5><a href="../tip calculator/index.html">Care for a tip?</a></h5>
+		<a href="../payment/index.php"><button class="btn btn-success" id="checkOut">Checkout</button></a>
+	</div>
+
+
+<script type="text/javascript" src="script.js" async></script>
+
+	 
+</body>
+</html>

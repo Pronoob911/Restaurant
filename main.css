@@ -1,0 +1,245 @@
+.info{
+	background: #ffffff;
+}
+body{
+	margin: 0;
+	/*color: #ffffff;*/
+	background:url(images/itembackground3.jpeg)center/cover fixed no-repeat;
+	
+}
+
+.primary-color{
+	color: #ef4a32;
+}
+
+.info h2{
+	word-spacing: 0.6rem;
+}
+
+.info a{
+	transition: color 0.6s ease-in-out;
+}
+
+.info a:hover{
+	color: #ffce18;
+
+}
+ .menu{
+	text-decoration: none;
+
+}
+
+/*header section*/
+#header{
+	min-height: calc(100vh - 94px);
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/h.jpeg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.height-90{
+	min-height: calc(100vh - 94px);
+}
+
+.banner h1{
+	margin-bottom: 15px;
+	border-top: 6px dashed #ffffff;
+	border-bottom: 6px dashed #ffffff;
+}
+
+.main-btn{
+	color: #ef4a32;
+	font-size: 1.5rem;
+	border: 2px solid #ef4a32;
+	transition: all is ease-in-out;
+}
+
+.main-btn:hover{
+	color:#242424;
+	border:2px solid #ef4a32 ;
+	background: #ef4a32;
+
+}
+
+.header-link{
+	display: inline-block;
+	position: absolute;
+	bottom:17%;
+	left:50%;
+	background:#ef4a32;
+	border-radius:10px;
+	transition: all 1s ease;
+	color: #242424;
+	animation:fromBottom;
+	animation-duration: 4s;
+	animation-iteration-count:infinite;
+}
+
+@keyframes fromBottom{
+	0%{
+		transform:translateY(-10px);
+	}
+	50%{
+		transform: translateY(10px);
+	}
+	100%{
+		transform: translateY(-10px);
+	}
+}
+
+
+
+/*menu items animations*/
+
+.item-container{
+	position:relative;
+	overflow:hidden;
+	background:linear-gradient(rgb(255,255,255),rgb(255,255,255));
+	transition:all 1s ease;
+}
+
+item-img{
+	transition: all 1s ease;
+
+}
+
+.item-container:hover .item-img{
+	transform: scale(1.2);
+
+}
+
+.item-link{
+	position: relative;
+	
+}
+
+
+#menu{
+	background:url(images/menu.jpeg)center/cover fixed no-repeat;
+}
+
+.special{
+	border:3px solid #ef4a32;
+	position: relative;
+}
+
+.special-text{
+	position: absolute;
+	top:0;
+	right: 10%;
+	background:#ef4a32;
+	padding: 0 0.4rem;
+}
+
+.contact-btn{
+	color:#ef4a32;
+	border-color: #ef4a32;
+	background:transparent;
+	transition: all 0.5s ease-in-out;
+}
+
+.contact-btn:hover{
+	background: #ef4a32;
+	color:black;
+
+}
+
+/*cart      */
+
+.cart-info__icon {
+  color: var(--mainBlack);
+  cursor: pointer;
+}
+
+.cart-info {
+  border: 0.1rem solid var(--mainBlack);
+  /*color: var(--mainBlack);*/
+  color:red;
+  border-radius: 0.25rem;
+  padding: 0.1rem 0.1rem;
+  cursor: pointer;
+}
+.cart-info:hover {
+  background: var(--mainPink);
+  border-color: var(--mainPink);
+  color: var(--mainWhite);
+}
+.cart-info:hover .cart-info__icon {
+  color: var(--mainWhite);
+}
+
+.cart {
+  position: absolute;
+  min-height: 10rem;
+  background: var(--mainWhite);
+  top: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.5);
+  width: 0;
+  overflow: hidden;
+}
+.show-cart {
+  width: 18rem;
+  padding: 2rem 1.5rem;
+  transform: rotateY(-360deg);
+}
+.cart-item {
+  transition: all 2s ease-in-out;
+}
+
+/* end of cart */
+/* cart item */
+.cart-item-remove {
+  color: var(--mainPink);
+  transition: all 1s ease-in-out;
+}
+.cart-item-remove:hover {
+  transform: scale(1.1);
+  color: var(--mainBlack);
+}
+#cart-item-price {
+  font-size: 0.8rem;
+}
+
+.btn-pink {
+  color: var(--mainPink) !important;
+  border-color: var(--mainPink) !important;
+}
+.btn-black {
+  color: var(--mainBlack) !important;
+  border-color: var(--mainBlack) !important;
+}
+.btn-black:hover {
+  color: var(--mainPink) !important;
+  background: var(--mainBlack) !important;
+}
+.btn-pink:hover {
+  background: var(--mainPink) !important;
+  color: var(--mainBlack) !important;
+}
+
+
+.cart-info__icon {
+  color: var(--mainBlack);
+  cursor: pointer;
+}
+
+.cart-info {
+  border: 0.1rem solid var(--mainBlack);
+  color: var(--mainBlack);
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+.cart-info:hover {
+  background: var(--mainPink);
+  border-color: var(--mainPink);
+  color: var(--mainWhite);
+}
+.cart-info:hover .cart-info__icon {
+  color: var(--mainWhite);
+}
